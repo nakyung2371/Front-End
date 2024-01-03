@@ -1,20 +1,108 @@
 <!DOCTYPE html>
-<html lang="ko"> 
-<head>   
-<meta charset="utf-8">
-<title>가상클래스</title> 
-<style type="text/css"> 
-	a { color: dodgerblue; }
-    a:hover { color: red; }
-</style> 
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>가상클래스</title>
+  <style type="text/css">
+    a {
+      color: dodgerblue;
+      /* 링크에 밑줄이 없도록 설정 */
+      text-decoration: none;
+    }
+
+    a:hover {
+      /* 마우스를 올렸을 때 */
+      color: red;
+    }
+
+    a:visited {
+      /* 방문한 사이트 */
+      color: yellowgreen;
+    }
+
+    a:active {
+      /* 마우스를 클릭하고 있을 때 */
+      color: gold;
+    }
+
+    .d1 {
+      background-color: aqua;
+      width: 100px;
+      height: 50px;
+      margin: 20px;
+      border-radius: 20px;
+    }
+
+    .d1:hover {
+      background-color: greenyellow;
+      width: 120px;
+      height: 55px;
+      margin: 20px;
+      /* 각 모서리를 반지름 20px 기준으로 원을 그려서 둥글게 만듦 */
+    }
+
+    .d2 {
+      background-color: palevioletred;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      color: white;
+      font-weight: bolder;
+      /* 글자의 굵기 */
+      font-size: 20px;
+      margin: 10px;
+
+      /*왼쪽을 기준으로 정렬*/
+      float: left;
+
+      /* div 박스에서 글자를 중앙에 정렬 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .clear {
+      clear: both;
+      /* float 속성을 제거함 */
+    }
+    .container {
+      width: 50%;
+      margin: 0 auto;
+    }
+  </style>
 </head>
+
 <body>
-   <ul>
-     <li><a href="#">COMPANY</a></li>
-     <li><a href="#">PRODUCT</a></li>
-     <li><a href="#">SERVICE</a></li>
-     <li><a href="#">CUSTOMER</a></li>
-     <li><a href="#">COMMUNITY</a></li>
-   </ul>
+  <ul>
+    <li><a href="#">COMPANY</a></li>
+    <li><a href="#">PRODUCT</a></li>
+    <li><a href="#">SERVICE</a></li>
+    <li><a href="#">CUSTOMER</a></li>
+    <li><a href="#">COMMUNITY</a></li>
+  </ul>
+
+  <h2>마우스를 올렸을 때 스타일 적용</h2>
+  <hr>
+  <div class="d1"></div>
+  <div class="d1"></div>
+  <div class="d1"></div>
+  <hr>
+  <h2>border-radius 속성을 사용해서 정원 그리기</h2>
+  <hr>
+  <div class="container">
+    <div class="d2">뽱1</div>
+    <div class="d2">뽱2</div>
+    <div class="d2">뽱3</div>
+    <div class="d2">뽱4</div>
+
+    <div class="clear"></div>
+
+    <div class="d2">뽱5</div>
+    <div class="d2">뽱6</div>
+    <div class="d2">뽱7</div>
+    <div class="d2">뽱8</div>
+  </div>
 </body>
+
 </html>

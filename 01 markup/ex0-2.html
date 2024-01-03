@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록, 인라인, 인라인 블록으로 변환</title>
+    <style>
+        .d1 {
+            border: 1px solid red;
+            display: inline;
+            width: 700px;   /* inline 상태로 변환되어서 width와 height가 안 나옴 */
+            height: 100px;
+        }
+        .s1 {
+            border: 1px solid red;
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+        .ib1 {
+            border: 1px solid red;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>블록 -> 인라인</h2>
+    <hr>
+    <div class="d1">div는 블록 태그입니다. 1</div>
+    <div class="d1">div는 블록 태그입니다. 2</div>
+    <div class="d1">div는 블록 태그입니다. 3</div>
+    
+    <hr>
+    <h2>인라인 -> 블록</h2>
+    <hr>
+    <span class="s1">span은 인라인 태그입니다. 1</span>
+    <span class="s1">span은 인라인 태그입니다. 2</span>
+    <span class="s1">span은 인라인 태그입니다. 3</span>
+
+    <hr>
+    <h2>인라인, 블록 -> 인라인 블록</h2>
+    <hr>
+    <div class="ib1">div는 블록 태그입니다.1</div>
+    <div class="ib1">div는 블록 태그입니다.2</div>
+    <div class="ib1">div는 블록 태그입니다.3</div>
+    <hr>
+    <span class="ib1">span은 인라인 태그입니다.1</span>
+    <span class="ib1">span은 인라인 태그입니다.2</span>
+    <span class="ib1">span은 인라인 태그입니다.3</span>
+
+</body>
+</html>
