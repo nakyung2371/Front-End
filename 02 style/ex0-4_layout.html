@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 레이아웃 1</title>
+    <style>
+        #container {
+            border: 1px solid red;
+            width: 1200px;
+            height: 850px;
+            margin: 0 auto;
+        }
+
+        #container>div {
+            border: 1px solid rgb(75, 75, 255);
+        }
+
+        #header {
+            height: 150px;
+        }
+
+        #main {
+            height: 550px;
+        }
+
+        #footer {
+            height: 150px;
+        }
+
+        #header>div {
+            border: 1px solid rgb(43, 230, 255);
+        }
+
+        .d1,
+        .d3 {
+            width: 20%;
+            height: 150px;
+            float: left;
+        }
+
+        .d2 {
+            width: 58%;
+            height: 150px;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 전체 페이지 레이아웃 -->
+    <div id="container">
+
+        <!-- 헤더 블락 -->
+        <div id="header">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+
+            <div class="clear"></div>
+
+        </div>
+        <!-- 메인 블락 -->
+        <div id="main"></div>
+
+        <!-- 푸터 블락 -->
+        <div id="footer"></div>
+    </div>
+
+</body>
+
+</html>

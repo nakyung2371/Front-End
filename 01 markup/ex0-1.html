@@ -11,8 +11,13 @@
             width: 700px;
             height: 100px;
 
+            /*
+            float: right;
+            */
+
             margin: 10px;   /* border 바깥쪽 여백 */
             padding: 30px;  /* border 안쪽 여백 */
+            
         }
         .s1 {
             border: 1px solid red;
@@ -22,6 +27,9 @@
             margin: 30px;
             padding: 30px;
         }
+        .clear {
+            clear: both;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +37,9 @@
     <hr>
     <div class="d1">div는 블록 태그입니다.</div>
     <div class="d1">div는 블록 태그입니다.</div>
+
+    <div class="clear"></div>
+
     <h2>인라인 태그</h2>
     <hr>
     <span class="s1">span은 인라인 태그입니다.</span>

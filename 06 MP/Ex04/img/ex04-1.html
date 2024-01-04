@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 100px;
+        }
+
+        main {
+            width: auto;
+            height: auto;
+        }
+
+        footer {
+            height: auto;
+        }
+
+        #t1 tr td {
+            height: 80px;
+
+            vertical-align: bottom;
+            font-size: 13px;
+        }
+
+        #d1 {
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #d2 {
+            background-color: #00A8AB;
+            height: 120px;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: center;
+        }
+
+        #d3 {
+            width: 330px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #d4 {
+            width: 286px;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        #d4 div {
+            border: 1px solid blue;
+        }
+        #d4_1 {
+            font-size: 12px;
+            color: #656565;
+            line-height: 150%
+        }
+
+        #d3,
+        #d4,
+        #d5 {
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+
+        li {
+            font-size: 12px;
+            color: #656565;
+            line-height: 150%
+        }
+
+        #d6 {
+            vertical-align: text-top;
+            padding-top: 10px;
+            line-height: 2%;
+            padding-left: 22px;
+            padding-right: 22px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li::marker {
+            color: #15B9B9;
+        }
+
+        #d7 {
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        #d7_1 {
+            line-height: 20px;
+        }
+        #d7_2 {
+            width: auto;
+            display: flex;
+            justify-content: right;            
+            margin-top: 5px;
+        }
+        form {
+            display: flex;
+            justify-content: right;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <table id="t1">
+                <tr>
+                    <td width="130px"><img src="logo.gif"></td>
+                    <td width="520px"><img src="moto.gif"></td>
+                    <td width="350px" style="text-align: right;">로그인 | 회원 가입 | 사이트맵 | 회사 소개</td>
+                </tr>
+            </table>
+        </header>
+
+        <hr>
+
+        <main>
+            <div id="d1">
+                <div><img src="menu01.gif"></div>
+                <td><img src="menu02.gif"></td>
+                <td><img src="menu03.gif"></td>
+                <td><img src="menu04.gif"></td>
+                <td><img src="menu05.gif"></td>
+
+            </div>
+            <br>
+
+            <div id="d2">
+                <div><img src="banner01.gif" width=""></div>
+                <div><img src="banner_bar.gif"></div>
+                <div><img src="banner02.gif"></div>
+                <div><img src="banner_bar.gif"></div>
+                <div><img src="banner03.gif"></div>
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center;">
+                <div id="d3">
+                    <div><img src="customer.gif"></div>
+                    <div><img src="more.gif"></div>
+                </div>
+                <div id="d4">
+                    <div><img src="notice.gif"></div>
+                    <div><img src="more.gif"></div>
+                    
+                    <div id="d4_1">새로운 상품의 출시를 알려드립니다.       2014-03-03</div>
+                </div>
+                <div id="d5">
+                    <div width: 330px;><img src="banner_faq.gif"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <hr>
+
+            <div id="d6">
+                <div>
+                    <font style="color: #15B9B9; margin-left: 35px;"><b>손해보험 상식</b></font>
+                    <ul>
+                        <li>손해보험이란?</li>
+                        <li>나에게 필요한 보험은?</li>
+                        <li>보험약관의 중요성</li>
+                        <li>손해보험의 특징</li>
+                    </ul>
+                </div>
+                <div>
+                    <font style="color: #15B9B9; margin-left: 35px;"><b>루바토 보험의 장점</b></font>
+                    <ul>
+                        <li>보험료 저렴</li>
+                        <li>신속한 처리 및 보상</li>
+                        <li>만기 시 원리금 보장</li>
+                    </ul>
+                </div>
+                <div>
+                    <font style="color: #15B9B9; margin-left: 35px;"><b>고객센터</b></font>
+                    <ul>
+                        <li>전국 지점 안내</li>
+                        <li>손해배상 안내</li>
+                        <li>손해보험 FAQ</li>
+                        <li>질문과 답변</li>
+                    </ul>
+                </div>
+                <div>
+                    <font style="color: #15B9B9; margin-left: 35px;"><b>마이페이지</b></font>
+                    <ul>
+                        <li>계약 조회/변경</li>
+                        <li>보험 계약 갱신</li>
+                        <li>보험료 납입</li>
+                        <li>증명서 발급</li>
+                    </ul>
+                </div>
+                <div>
+                    <font style="color: #15B9B9; margin-left: 35px;"><b>가입 안내</b></font>
+                    <ul>
+                        <li>공인인증센터</li>
+                        <li>인증서 발급/갱신</li>
+                        <li>인증서 폐기</li>
+                        <li>웹 로그인</li>
+                    </ul>
+                </div>
+                <div>
+                    <font style="color: #15B9B9; margin-left: 35px;"><b>회사 소개</b></font>
+                    <ul>
+                        <li>기업소개</li>
+                        <li>찾아오시는 길</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr color="#00A8AB">
+            <br>
+
+
+        </main>
+        <footer>
+            <div id="d7">
+                <div>
+                    <font style="font-size: 12px; color: #656565;">
+                        <pre>개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부
+서민금융119서비스 | 보험범죄 신고 | 전자 민원 접수 | 보험약관 안내 | 금융사기신고센터
+
+투바토 손해보험(주)
+대표이사 : 홍길동
+주소 : 서울시 강남구 가나다동 123번지
+전화 : (02)123-1234, FAX : (02)134-4747
+Copyright by Rubato Company All Rights Reserved.</pre>
+
+                    </font>
+                </div>
+                <div id="d7_1">
+                    <div>
+                        <font style="color: #15B9B9;"><b>고객센터 1588-1234</b></font>
+                    </div>
+                    <div>
+                        <form>
+                            <select name="site">
+                                <option value="naver">네이버</option>
+                                <option value="naver">뭐야이건</option>
+                                <option value="naver">티스토리?</option>
+                            </select>
+                        </form>
+                        <div id="d7_2">
+                            <div><img src="f.gif"></div>
+                            <div><img src="b.gif"></div>
+                            <div><img src="t.gif"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
